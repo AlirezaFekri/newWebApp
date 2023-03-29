@@ -28,7 +28,7 @@ module.exports = {
       '4xl':'0px 4px 4px rgba(0, 0, 0, 0.25)'
     },
     backgroundImage:{
-      'logo': "url('/assets/img/Logo.svg')"
+      'logo': "url('../assets/img/Logo.svg')"
     }
   },
   plugins: [],
