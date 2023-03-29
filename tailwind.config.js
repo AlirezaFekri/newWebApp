@@ -20,17 +20,18 @@ module.exports = {
       'Slate-200' : '#E2E2E2',
       'Stone-100' : '#F4F4F4',
       'Stone-50' : '#FDFDFD',
+      'Gray-300' : '#AFAFAF',
       'Gray-200' : '#EBEBEB',
       'Indigo-600': '#8750FB',
-      'Yellow-400': '#FFDE74',
+      'Yellow-400': '#FFDE74'
     },
     dropShadow:{
       '4xl':'0px 4px 4px rgba(0, 0, 0, 0.25)'
     },
     backgroundImage:{
-      'logo': "url('../assets/img/Logo.svg')"
+      'logo': "url('/assets/img/Logo.svg')",
     }
   },
-  plugins: [],
+  plugins: []
 }
 

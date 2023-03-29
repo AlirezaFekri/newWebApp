@@ -8,17 +8,15 @@
 		<title>Digitize App</title>
 	</head>
 	<body class="bg-Stone-100 mx-4">
-        <!-- App bar -->
+		<!-- App bar -->
 		<header class="flex justify-between mt-[41px] drop-shadow-4xl">
 			<div class="w-[50px] h-[42px] drop-shadow-4xl bg-logo"></div>
-
 			<div class="text-[24px] leading-[37.2px] font-bold text-Slate-800">
 				ساعت هوشمند
 			</div>
-
-			<div class="flex justify-center items-center rounded-[5px] mb-[17px] bg-Stone-50 drop-shadow-4xl h-[31.5px] w-[31.5px]">
-				
-                <svg
+			<div
+				class="flex justify-center items-center rounded-[5px] mb-[17px] bg-Stone-50 drop-shadow-4xl h-[31.5px] w-[31.5px]">
+				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
@@ -30,10 +28,33 @@
 						stroke-linejoin="round"
 						d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
 				</svg>
-
 			</div>
-
 		</header>
+		<!-- Sort and Filter -->
+		<div class="flex gap-2 items-center justify-between h-[45px] w-full">
+			<div
+				class="flex items-center bg-Stone-50 text-Slate-800 h-[45px] rounded-[5px] w-1/2">
+				<div class="flex justify-start gap-0 mx-[6px] mt-[9px] mb-[6px]">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
+					</svg>					  
+				</div>
 
+				<p class="h-6 text-sm tracking-[-.09em] mt-[11px] mb-[9px]">
+					محبوب ترین محصول
+				</p>
+			</div>
+			<div
+				class="flex items-center bg-Stone-50 text-Slate-800 h-[45px] rounded-[5px] w-1/2">
+				<div class="mt-[11px] mr-2 mb-[10px] ml-3 w-5 h-5">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" class="stroke-Gray-300" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
+					</svg>
+				</div>
+				<p class="h-6 text-sm tracking-[-.1em] mt-4 mb-[9px]">
+					فیلتر: برند اپل
+				</p>
+			</div>
+		</div>
 	</body>
 </html>
