@@ -408,8 +408,18 @@ video {
   margin-left: 23px;
   margin-right: 23px;
 }
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mt-\[41px\]{
   margin-top: 41px;
+}
+.mb-\[\]{
+  margin-bottom: ;
+}
+.mb-\[17px\]{
+  margin-bottom: 17px;
 }
 .flex{
   display: flex;
@@ -454,6 +464,9 @@ video {
 }
 .bg-logo{
   background-image: url('/assets/img/Logo.svg');
+}
+.stroke-Slate-800{
+  stroke: #222F5D;
 }
 .text-\[24px\]{
   font-size: 24px;
