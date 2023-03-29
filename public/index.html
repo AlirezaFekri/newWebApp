@@ -7,259 +7,331 @@
 		<link rel="stylesheet" href="./build/tailwind.css" />
 		<title>Digitize App</title>
 	</head>
-	<body class="bg-Stone-100 mx-4">
-		<!-- App bar -->
-		<header class="flex justify-between mt-[41px] drop-shadow-4xl">
-			<div class="w-[50px] h-[42px] drop-shadow-4xl bg-logo"></div>
-			<div class="text-[24px] leading-[37.2px] font-bold text-Slate-800">
-				ساعت هوشمند
-			</div>
+	<body class="bg-Stone-100">
+		<div class="mx-4">
+			<!-- App bar -->
+			<header class="flex justify-between mt-[41px] drop-shadow-4xl">
+				<div class="w-[50px] h-[42px] drop-shadow-4xl bg-logo"></div>
+				<div class="text-[24px] leading-[37.2px] font-bold text-Slate-800">
+					ساعت هوشمند
+				</div>
+				<div
+					class="flex justify-center items-center rounded-[5px] mb-[17px] bg-Stone-50 drop-shadow-4xl h-[31.5px] w-[31.5px]">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-5 h-5 stroke-Slate-800">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+					</svg>
+				</div>
+			</header>
+			<!-- Sort and Filter -->
 			<div
-				class="flex justify-center items-center rounded-[5px] mb-[17px] bg-Stone-50 drop-shadow-4xl h-[31.5px] w-[31.5px]">
+				class="flex gap-2 mb-[14px] items-center justify-between h-[45px] w-full">
+				<div
+					class="flex items-center bg-Stone-50 text-Slate-800 h-[45px] rounded-[5px] w-1/2">
+					<div class="flex justify-start gap-0 mx-[6px] mt-[9px] mb-[6px]">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
+						</svg>
+					</div>
+
+					<p class="h-6 text-sm tracking-[-.09em] mt-[11px] mb-[9px]">
+						محبوب ترین محصول
+					</p>
+				</div>
+				<div
+					class="flex items-center bg-Stone-50 text-Slate-800 h-[45px] rounded-[5px] w-1/2">
+					<div class="mt-[11px] mb-[10px] ml-3 w-5 h-5">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6">
+							<path
+								stroke-linecap="round"
+								class="stroke-Gray-300"
+								stroke-linejoin="round"
+								d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
+						</svg>
+					</div>
+					<p class="h-6 text-sm tracking-[-.1em] mt-4 mb-[9px]">
+						فیلتر: برند اپل
+					</p>
+				</div>
+			</div>
+			<!-- Cards -->
+			<div class="grid mb-20 grid-cols-2 gap-[10px] w-full">
+				<div
+					class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
+					<div
+						class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
+						<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
+						<div
+							class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
+								<path
+									d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+							</svg>
+						</div>
+					</div>
+					<div class="mt-3 flex justify-between items-center">
+						<p class="text-Slate-200 pr-1">اپل</p>
+						<div class="flex gap-[-2px]">
+							<div
+								class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
+							<div
+								class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
+							<div
+								class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
+							<div
+								class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
+							<div
+								class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
+						</div>
+					</div>
+					<div
+						class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
+						ساعت هوشمند اپل سری 6
+					</div>
+					<div
+						class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
+						<span class="leading-7 font-medium text-[14px]">تومان</span>
+						<span class="leading-7 font-medium text-[14px]">48,250,000</span>
+					</div>
+					<div
+						class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
+						<span> مشاهده و سفارش </span>
+					</div>
+				</div>
+				<div
+					class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
+					<div
+						class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
+						<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
+						<div
+							class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
+								<path
+									d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+							</svg>
+						</div>
+					</div>
+					<div class="mt-3 flex justify-between items-center">
+						<p class="text-Slate-200 pr-1">اپل</p>
+						<div class="flex gap-[-2px]">
+							<div
+								class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
+							<div
+								class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
+							<div
+								class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
+							<div
+								class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
+							<div
+								class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
+						</div>
+					</div>
+					<div
+						class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
+						ساعت هوشمند اپل سری 6
+					</div>
+					<div
+						class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
+						<span class="leading-7 font-medium text-[14px]">تومان</span>
+						<span class="leading-7 font-medium text-[14px]">48,250,000</span>
+					</div>
+					<div
+						class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
+						<span> مشاهده و سفارش </span>
+					</div>
+				</div>
+				<div
+					class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
+					<div
+						class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
+						<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
+						<div
+							class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
+								<path
+									d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+							</svg>
+						</div>
+					</div>
+					<div class="mt-3 flex justify-between items-center">
+						<p class="text-Slate-200 pr-1">اپل</p>
+						<div class="flex gap-[-2px]">
+							<div
+								class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
+							<div
+								class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
+							<div
+								class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
+							<div
+								class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
+							<div
+								class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
+						</div>
+					</div>
+					<div
+						class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
+						ساعت هوشمند اپل سری 6
+					</div>
+					<div
+						class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
+						<span class="leading-7 font-medium text-[14px]">تومان</span>
+						<span class="leading-7 font-medium text-[14px]">48,250,000</span>
+					</div>
+					<div
+						class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
+						<span> مشاهده و سفارش </span>
+					</div>
+				</div>
+				<div
+					class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
+					<div
+						class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
+						<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
+						<div
+							class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
+								<path
+									d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+							</svg>
+						</div>
+					</div>
+					<div class="mt-3 flex justify-between items-center">
+						<p class="text-Slate-200 pr-1">اپل</p>
+						<div class="flex gap-[-2px]">
+							<div
+								class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
+							<div
+								class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
+							<div
+								class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
+							<div
+								class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
+							<div
+								class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
+						</div>
+					</div>
+					<div
+						class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
+						ساعت هوشمند اپل سری 6
+					</div>
+					<div
+						class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
+						<span class="leading-7 font-medium text-[14px]">تومان</span>
+						<span class="leading-7 font-medium text-[14px]">48,250,000</span>
+					</div>
+					<div
+						class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
+						<span> مشاهده و سفارش </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer nav -->
+		<div
+			id="footer-nav"
+			class="sm:hidden bg-Stone-50 rounded-tr rounded-tl h-12 fixed bottom-0 left-0 w-full flex justify-around items-center"
+			x-data="{ select: 1,
+				DeActive: 'stroke-Gray-300 fill-Gray-300',
+				Active: 'stroke-Slate-800 fill-Slate-800' }">
+			<div class="flex flex-row-reverse gap-2">
+				<p class="text-Slate-800" x-show="select === 1">خانه</p>
 				<svg
+					@click="select=1"
+					:class="select === 1 ? Active : DeActive"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+					class="w-6 h-6">
+					<path
+						d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+					<path
+						d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+				</svg>
+			</div>
+			<div class="flex flex-row-reverse gap-2">
+				<p class="text-Slate-800" x-show="select === 2">دسته بندی</p>
+				<svg
+					@click="select=2"
+					:class="select === 2 ? Active : DeActive"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					class="w-6 h-6 fill-red-300"
+					id="category">
+					<path
+						d="M5.9199,11.4697 C7.3299,11.4697 8.4599,12.6107 8.4599,14.0307 L8.4599,14.0307 L8.4599,17.4397 C8.4599,18.8497 7.3299,19.9997 5.9199,19.9997 L5.9199,19.9997 L2.5399,19.9997 C1.1399,19.9997 -0.0001,18.8497 -0.0001,17.4397 L-0.0001,17.4397 L-0.0001,14.0307 C-0.0001,12.6107 1.1399,11.4697 2.5399,11.4697 L2.5399,11.4697 Z M17.46,11.4697 C18.86,11.4697 20,12.6107 20,14.0307 L20,14.0307 L20,17.4397 C20,18.8497 18.86,19.9997 17.46,19.9997 L17.46,19.9997 L14.08,19.9997 C12.67,19.9997 11.54,18.8497 11.54,17.4397 L11.54,17.4397 L11.54,14.0307 C11.54,12.6107 12.67,11.4697 14.08,11.4697 L14.08,11.4697 Z M5.9199,-9.32587341e-14 C7.3299,-9.32587341e-14 8.4599,1.15 8.4599,2.561 L8.4599,2.561 L8.4599,5.97 C8.4599,7.39 7.3299,8.53 5.9199,8.53 L5.9199,8.53 L2.5399,8.53 C1.1399,8.53 -0.0001,7.39 -0.0001,5.97 L-0.0001,5.97 L-0.0001,2.561 C-0.0001,1.15 1.1399,-9.32587341e-14 2.5399,-9.32587341e-14 L2.5399,-9.32587341e-14 Z M17.46,-9.32587341e-14 C18.86,-9.32587341e-14 20,1.15 20,2.561 L20,2.561 L20,5.97 C20,7.39 18.86,8.53 17.46,8.53 L17.46,8.53 L14.08,8.53 C12.67,8.53 11.54,7.39 11.54,5.97 L11.54,5.97 L11.54,2.561 C11.54,1.15 12.67,-9.32587341e-14 14.08,-9.32587341e-14 L14.08,-9.32587341e-14 Z"
+						transform="translate(2 2)"></path>
+				</svg>
+			</div>
+			<div class="flex flex-row-reverse gap-2">
+				<p class="text-Slate-800" x-show="select === 3">سبد خرید</p>
+				<svg
+				@click="select=3"
+				:class="select === 3 ? Active : DeActive"
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
 					stroke-width="1.5"
 					stroke="currentColor"
-					class="w-5 h-5 stroke-Slate-800">
+					class="w-6 h-6">
 					<path
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
 				</svg>
 			</div>
-		</header>
-		<!-- Sort and Filter -->
-		<div
-			class="flex gap-2 mb-[14px] items-center justify-between h-[45px] w-full">
-			<div
-				class="flex items-center bg-Stone-50 text-Slate-800 h-[45px] rounded-[5px] w-1/2">
-				<div class="flex justify-start gap-0 mx-[6px] mt-[9px] mb-[6px]">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-6 h-6">
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
-					</svg>
-				</div>
-
-				<p class="h-6 text-sm tracking-[-.09em] mt-[11px] mb-[9px]">
-					محبوب ترین محصول
-				</p>
-			</div>
-			<div
-				class="flex items-center bg-Stone-50 text-Slate-800 h-[45px] rounded-[5px] w-1/2">
-				<div class="mt-[11px] mb-[10px] ml-3 w-5 h-5">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-6 h-6">
-						<path
-							stroke-linecap="round"
-							class="stroke-Gray-300"
-							stroke-linejoin="round"
-							d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
-					</svg>
-				</div>
-				<p class="h-6 text-sm tracking-[-.1em] mt-4 mb-[9px]">
-					فیلتر: برند اپل
-				</p>
+			<div class="flex flex-row-reverse gap-2">
+				<p class="text-Slate-800" x-show="select === 4">علاقه مندی</p>
+				<svg
+					@click="select=4"
+					:class="select === 4 ? Active : DeActive"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+					class="w-6 h-6">
+					<path
+						d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+				</svg>
 			</div>
 		</div>
-		<!-- Cards -->
-		<div class="grid grid-cols-2 gap-[10px] w-full">
-			<div class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
-				<div
-					class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
-					<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
-					<div
-						class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							fill="currentColor"
-							class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
-							<path
-								d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-						</svg>
-					</div>
-				</div>
-				<div class="mt-3 flex justify-between items-center">
-					<p class="text-Slate-200 pr-1">اپل</p>
-					<div class="flex gap-[-2px]">
-						<div
-							class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
-						<div
-							class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
-						<div
-							class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
-						<div
-							class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
-						<div
-							class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
-					</div>
-				</div>
-				<div
-					class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
-					ساعت هوشمند اپل سری 6
-				</div>
-				<div class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
-					<span class="leading-7 font-medium text-[14px]">تومان</span>
-					<span class="leading-7 font-medium text-[14px]">48,250,000</span>
-				</div>
-				<div class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
-					<span>
-						مشاهده و سفارش
-					</span>
-				</div>
-			</div>
-			<div class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
-				<div
-					class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
-					<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
-					<div
-						class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							fill="currentColor"
-							class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
-							<path
-								d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-						</svg>
-					</div>
-				</div>
-				<div class="mt-3 flex justify-between items-center">
-					<p class="text-Slate-200 pr-1">اپل</p>
-					<div class="flex gap-[-2px]">
-						<div
-							class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
-						<div
-							class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
-						<div
-							class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
-						<div
-							class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
-						<div
-							class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
-					</div>
-				</div>
-				<div
-					class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
-					ساعت هوشمند اپل سری 6
-				</div>
-				<div class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
-					<span class="leading-7 font-medium text-[14px]">تومان</span>
-					<span class="leading-7 font-medium text-[14px]">48,250,000</span>
-				</div>
-				<div class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
-					<span>
-						مشاهده و سفارش
-					</span>
-				</div>
-			</div>
-			<div class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
-				<div
-					class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
-					<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
-					<div
-						class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							fill="currentColor"
-							class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
-							<path
-								d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-						</svg>
-					</div>
-				</div>
-				<div class="mt-3 flex justify-between items-center">
-					<p class="text-Slate-200 pr-1">اپل</p>
-					<div class="flex gap-[-2px]">
-						<div
-							class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
-						<div
-							class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
-						<div
-							class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
-						<div
-							class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
-						<div
-							class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
-					</div>
-				</div>
-				<div
-					class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
-					ساعت هوشمند اپل سری 6
-				</div>
-				<div class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
-					<span class="leading-7 font-medium text-[14px]">تومان</span>
-					<span class="leading-7 font-medium text-[14px]">48,250,000</span>
-				</div>
-				<div class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
-					<span>
-						مشاهده و سفارش
-					</span>
-				</div>
-			</div>
-			<div class="bg-white mt-5 rounded-[11.8px] px-[5px] pt-[6px] drop-shadow-5xl">
-				<div
-					class="w-full relative pt-5 pr-10 pb-6 overflow-hidden bg-Slate-200 rounded-[9.26px]">
-					<img class="h-[113px]" src="./../assets/img/Cart/1.png" alt="" />
-					<div
-						class="absolute h-8 w-8 bg-Gray-300 top-2 right-2 flex justify-center items-center rounded-full">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							fill="currentColor"
-							class="w-5 h-5 stroke-Orange-400 fill-Orange-400">
-							<path
-								d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-						</svg>
-					</div>
-				</div>
-				<div class="mt-3 flex justify-between items-center">
-					<p class="text-Slate-200 pr-1">اپل</p>
-					<div class="flex gap-[-2px]">
-						<div
-							class="rounded-full border border-solid relative z-50 left-[-8px] border-Stone-50 h-3 w-3 bg-Orange-300"></div>
-						<div
-							class="rounded-full border border-solid relative z-40 left-[-6px] border-Stone-50 h-3 w-3 bg-Indigo-600"></div>
-						<div
-							class="rounded-full border border-solid relative z-30 left-[-4px] border-Stone-50 h-3 w-3 bg-Yellow-400"></div>
-						<div
-							class="rounded-full border border-solid relative z-20 left-[-2px] border-Stone-50 h-3 w-3 bg-Orange-400"></div>
-						<div
-							class="rounded-full border border-solid relative border-gray-300 h-3 w-3 bg-Gray-300"></div>
-					</div>
-				</div>
-				<div
-					class="mt-3 text-Slate-90 font-thin tracking-[-.1em] leading-[19px] text-[13px] pr-[9px]">
-					ساعت هوشمند اپل سری 6
-				</div>
-				<div class="mt-2 flex pl-[4px] gap-1 flex-row-reverse text-left text-Orange-700">
-					<span class="leading-7 font-medium text-[14px]">تومان</span>
-					<span class="leading-7 font-medium text-[14px]">48,250,000</span>
-				</div>
-				<div class="pt-2 text-center text-[14px] leading-[19px] text-Orange-400 pb-[10px] border-t-[1px]">
-					<span>
-						مشاهده و سفارش
-					</span>
-				</div>
-			</div>
-		</div>
-		<!-- footer nav --> 
-		
+		<script src="./../src/js/main.js" defer></script>
 	</body>
 </html>
