@@ -29,7 +29,8 @@ module.exports = {
     dropShadow: {
       '4xl': '0px 4px 4px rgba(0, 0, 0, 0.25)',
       '5xl': '0px 3.09px 6.18px rgba(0, 0, 0, 0.08)',
-      '6xl': ' 0px -4px 8px 0px rgba(0, 0, 0, 0.08)'
+      '6xl': ' 0px -4px 8px 0px rgba(0, 0, 0, 0.08)',
+      '7xl': ' 0px 4px 14px 0px rgba(0, 0, 0, 0.08)',
 
     },
     backgroundImage: {
